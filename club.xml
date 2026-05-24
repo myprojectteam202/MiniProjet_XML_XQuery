@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<club nom="Info_Tech"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="club.xsd">
+
+    <!-- ===== CATEGORIES ===== -->
+
+    <categories>
+
+        <categorie id="C1" libelle="Intelligence Artificielle"/>
+        <categorie id="C2" libelle="Développement Web"/>
+        <categorie id="C3" libelle="Sécurité Informatique"/>
+
+    </categories>
+
+    <!-- ===== MEMBRES ===== -->
+
+    <membres>
+
+        <membre id="M001" categorieRef="C1">
+            <nom>Benali</nom>
+            <prenom>Ahmed</prenom>
+            <email>ahmed@club.dz</email>
+        </membre>
+
+        <membre id="M002" categorieRef="C1">
+            <nom>Amrani</nom>
+            <prenom>Lina</prenom>
+            <email>lina@club.dz</email>
+        </membre>
+
+        <membre id="M003" categorieRef="C1">
+            <nom>Bouzid</nom>
+            <prenom>Yacine</prenom>
+            <email>yacine@club.dz</email>
+        </membre>
+
+        <membre id="M004" categorieRef="C2">
+            <nom>Khelif</nom>
+            <prenom>Sara</prenom>
+            <email>sara@club.dz</email>
+        </membre>
+
+        <membre id="M005" categorieRef="C2">
+            <nom>Hamdi</nom>
+            <prenom>Imene</prenom>
+            <email>imene@club.dz</email>
+        </membre>
+
+        <membre id="M006" categorieRef="C2">
+            <nom>Rahmani</nom>
+            <prenom>Walid</prenom>
+            <email>walid@club.dz</email>
+        </membre>
+
+        <membre id="M007" categorieRef="C3">
+            <nom>Zerrouki</nom>
+            <prenom>Mohamed</prenom>
+            <email>mohamed@club.dz</email>
+        </membre>
+
+        <membre id="M008" categorieRef="C3">
+            <nom>Saidi</nom>
+            <prenom>Nour</prenom>
+            <email>nour@club.dz</email>
+        </membre>
+
+    </membres>
+
+    <!-- ===== CONCOURS ===== -->
+
+    <concours>
+
+        <!-- IA -->
+
+        <concours id="CO1"
+                   categorieRef="C1"
+                   date="2025-03-15"
+                   coefficient="1.5">
+
+            <titre>Concours IA 2025</titre>
+
+            <participants>
+
+                <participant membreRef="M001">
+                    <complexite>80</complexite>
+                    <tempsExecution>100</tempsExecution>
+                </participant>
+
+                <participant membreRef="M002">
+                    <complexite>90</complexite>
+                    <tempsExecution>110</tempsExecution>
+                </participant>
+
+                <participant membreRef="M003">
+                    <complexite>70</complexite>
+                    <tempsExecution>120</tempsExecution>
+                </participant>
+
+            </participants>
+
+        </concours>
+
+        <!-- WEB -->
+
+        <concours id="CO2"
+                   categorieRef="C2"
+                   date="2025-04-20"
+                   coefficient="2.0">
+
+            <titre>Concours Web 2025</titre>
+
+            <participants>
+
+                <participant membreRef="M004">
+                    <complexite>85</complexite>
+                    <tempsExecution>90</tempsExecution>
+                </participant>
+
+                <participant membreRef="M005">
+                    <complexite>95</complexite>
+                    <tempsExecution>100</tempsExecution>
+                </participant>
+
+                <participant membreRef="M006">
+                    <complexite>75</complexite>
+                    <tempsExecution>110</tempsExecution>
+                </participant>
+
+            </participants>
+
+        </concours>
+
+        <!-- SECURITE -->
+
+        <concours id="CO3"
+                   categorieRef="C3"
+                   date="2025-05-10"
+                   coefficient="1.8">
+
+            <titre>Concours Sécurité</titre>
+
+            <participants>
+
+                <participant membreRef="M007">
+                    <complexite>88</complexite>
+                    <tempsExecution>95</tempsExecution>
+                </participant>
+
+                <participant membreRef="M008">
+                    <complexite>92</complexite>
+                    <tempsExecution>105</tempsExecution>
+                </participant>
+
+            </participants>
+
+        </concours>
+
+    </concours>
+
+</club>
